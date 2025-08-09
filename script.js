@@ -43,7 +43,7 @@ const featuresDropdownId = document.getElementById('features-dropdown-id');
 const arrDownId = document.getElementById('arr-down-id');
 const arrUpId = document.getElementById('arr-up-id');
 
-arrowAnchor.addEventListener('click',(e)=>{
+arrowAnchorId.addEventListener('click',(e)=>{
     e.preventDefault();
     if(featuresDropdownId.classList.contains('hidden')){
         featuresDropdownId.classList.remove('hidden');
