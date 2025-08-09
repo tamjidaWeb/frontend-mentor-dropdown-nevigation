@@ -38,3 +38,23 @@ arrowAnchor.addEventListener('click',(e)=>{
         arrUp.classList.remove('hidden');
     }
 })
+const arrowAnchorId = document.getElementById('arrow-anchor-id');
+const featuresDropdownId = document.getElementById('features-dropdown-id');
+const arrDownId = document.getElementById('arr-down-id');
+const arrUpId = document.getElementById('arr-up-id');
+
+arrowAnchor.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if(featuresDropdownId.classList.contains('hidden')){
+        featuresDropdownId.classList.remove('hidden');
+        featuresDropdownId.classList.add('block');
+        arrDownId.classList.remove('hidden');
+        arrUpId.classList.add('hidden');
+    }
+    else{
+        featuresDropdownId.classList.remove('block');
+        featuresDropdownId.classList.add('hidden');
+        arrDownId.classList.add('hidden');
+        arrUpId.classList.remove('hidden');
+    }
+})
