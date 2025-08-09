@@ -21,8 +21,20 @@ closeBtn.addEventListener('click',(e)=>{
 const arrowAnchor = document.getElementById('arrow-anchor');
 const featuresDropdown = document.getElementById('features-dropdown');
 const arrDown = document.getElementById('arr-down');
+const arrUp = document.getElementById('arr-up');
 
 arrowAnchor.addEventListener('click',(e)=>{
     e.preventDefault();
-    if(featuresDropdown.classList.contains))
+    if(featuresDropdown.classList.contains('hidden')){
+        featuresDropdown.classList.remove('hidden');
+        featuresDropdown.classList.add('block');
+        arrDown.classList.remove('hidden');
+        arrUp.classList.add('hidden');
+    }
+    else{
+        featuresDropdown.classList.remove('block');
+        featuresDropdown.classList.add('hidden');
+        arrDown.classList.add('hidden');
+        arrUp.classList.remove('hidden');
+    }
 })
