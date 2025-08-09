@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="">
+    <div class="container mx-auto min-h-screen">
+        <div>
+            <nav class="flex justify-between items-center p-4">
+                <div class="flex items-center gap-20">
+                    <div>
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="hidden md:block ">
+                    <ul class="flex space-x-12">
+                        <!-- dropdown 1  -->
+                        <li class="relative">
+                        <a href="#" class="flex items-center justify-between">
+                            Features
+                            <img src="images/icon-arrow-up.svg" alt="" class="ml-2">
+                            <img src="images/icon-arrow-down.svg" alt="" class="ml-2 hidden">
+                        </a>
+                        <ul id="features-dropdown" class="mt-2 ml-4 space-y-1 border rounded-lg p-2  absolute hidden">
+                            <li><a href="#" class="text-sm text-gray-600 hover:text-black">Todo List</a></li>
+                            <li><a href="#" class="text-sm text-gray-600 hover:text-black">Calendar</a></li>
+                            <li><a href="#" class="text-sm text-gray-600 hover:text-black">Reminders</a></li>
+                            <li><a href="#" class="text-sm text-gray-600 hover:text-black">Reminders</a></li>
+                        </ul>
+                        </li>
+                        
+                        <!-- dropdown 2  -->
+                        <li class="relative">
+                        <a href="#" class="flex items-center justify-between">
+                            Company
+                            <img src="images/icon-arrow-up.svg" alt="" class="ml-2">
+                            <img src="images/icon-arrow-down.svg" alt="" class="ml-2 hidden">
+                        </a>
+                        <ul id="features-dropdown-id" class="mt-2 ml-4 space-y-1 border rounded-lg p-2 hidden absolute">
+                            <li><a href="#" class="text-sm text-gray-600 hover:text-black">History</a></li>
+                            <li><a href="#" class="text-sm text-gray-600 hover:text-black">Our Team </a></li>
+                            <li><a href="#" class="text-sm text-gray-600 hover:text-black">Reminders</a></li>
+                        </ul>
+                        </li>
+
+                        <li>Careers</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div>
+                    <div class="md:hidden lg:hidden">
+                         <a href=""><img src="images/icon-menu.svg" alt=""></a>
+
+                    </div>
+                    <div class="hidden md:block lg:block">
+                        <button class="pr-10">Login </button>
+                    <button class="px-4 py-2 border rounded-lg">Register</button>
+                </div>
+                </div>
+            </nav>
+
+            <div id="side-nav" class="p-8 md:hidden pt-16 h-full fixed top-0 right-0 bg-purple-500 overflow-x-hidden transition duration-500 ease-in">
+                <a  href="" class="closeBtn px-4 py-4 absolute top-4 right-2">&#10006;</a>
+                <a class="px-4 text-lg  py-4 block" href="">Home</a>
+                <a class="px-4 text-lg  py-4 block" href="">About</a>
+                <a class="px-4 text-lg  py-4 block" href="">Services</a>
+                <a class="px-4 text-lg  py-4 block" href="">Contact</a>
+                <a class="px-4 text-lg  py-4 block" href=""><button class="border px-6 rounded-md bg-white py-2">Login</button></a>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 ">
+            <div class="flex text-center md:text-left flex-col justify-center items-center md:items-start   md:px-16 py-10 md:py-20 order-2 md:order-1">
+                <h1 class="text-5xl md:text-7xl font-bold">Make  <br class="hidden md:block"> remote work</h1>
+                <p class="pt-5 text-2xl md:text-lg">Get your team in sync, no matter your <br> location. <br class="hidden md:block"> Streamline processes, 
+                   create <br> team rituals, and <br class="hidden md:block"> watch productivity soar.</p>
+                <button class="border border-black px-6 py-3 rounded-xl bg-black text-white md:bg-white md:text-black ">Learn more</button>
+
+                <div class="flex  items-center pt-8  md:pt-15 ">
+                    <img class=" text-center w-[70px] m-2" src="images/client-databiz.svg" alt="">
+                    <img class=" text-center w-[70px] m-2" src="images/client-audiophile.svg" alt="">
+                    <img class=" text-center w-[70px] m-2" src="images/client-maker.svg" alt="">
+                    <img class=" text-center w-[70px] m-2" src="images/client-meet.svg" alt="">
+                    
+                </div>
+            </div>
+            <div class="flex justify-center items-center order-1 md:order-2 w-full">
+                <img class=" w-[600px] h-[500px] object-cover   md:h-auto md:w-[356px]" src="images/image-hero-desktop.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
