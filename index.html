@@ -18,10 +18,10 @@
                     <img src="images/logo.svg" alt="">
                 </div>
                 <div class="hidden md:block ">
-                    <ul class="flex space-x-12">
+                    <ul class="flex space-x-4">
                         <!-- dropdown 1  -->
                         <li class="relative">
-                        <a href="#" class="flex items-center justify-between">
+                        <a id="" href="#" class="flex items-center justify-between">
                             Features
                             <img src="images/icon-arrow-up.svg" alt="" class="ml-2">
                             <img src="images/icon-arrow-down.svg" alt="" class="ml-2 hidden">
@@ -55,7 +55,7 @@
                 </div>
 
                 <div>
-                    <div class="md:hidden lg:hidden">
+                    <div id="bars" class="md:hidden lg:hidden">
                          <a href=""><img src="images/icon-menu.svg" alt=""></a>
 
                     </div>
@@ -66,8 +66,8 @@
                 </div>
             </nav>
 
-            <div id="side-nav" class="p-8 md:hidden pt-16 h-full fixed top-0 right-0 bg-purple-500 overflow-x-hidden transition duration-500 ease-in">
-                <a  href="" class="closeBtn px-4 py-4 absolute top-4 right-2">&#10006;</a>
+            <div id="side-nav" class="p-8 hidden pt-16 h-full fixed top-0 right-0 bg-purple-500 overflow-x-hidden transition duration-500 ease-in">
+                <a id="cross"  href="" class="closeBtn px-4 py-4 absolute top-1 right-2">&#10006;</a>
                 <a class="px-4 text-lg  py-4 block" href="">Home</a>
                 <a class="px-4 text-lg  py-4 block" href="">About</a>
                 <a class="px-4 text-lg  py-4 block" href="">Services</a>
@@ -77,7 +77,7 @@
 
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 ">
-            <div class="flex text-center md:text-left flex-col justify-center items-center md:items-start   md:px-16 py-10 md:py-20 order-2 md:order-1">
+            <div class="flex text-center md:text-left flex-col justify-center items-center md:items-start   md:px-16 py-10 md:py-16 order-2 md:order-1">
                 <h1 class="text-5xl md:text-7xl font-bold">Make  <br class="hidden md:block"> remote work</h1>
                 <p class="pt-5 text-2xl md:text-lg">Get your team in sync, no matter your <br> location. <br class="hidden md:block"> Streamline processes, 
                    create <br> team rituals, and <br class="hidden md:block"> watch productivity soar.</p>
@@ -96,5 +96,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
